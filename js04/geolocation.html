@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>位置情報取得&天気表示</title>
+  <style>
+    /* 表に線を表示する */
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>今日の天気</h1>
+    <div id="weather_icon"></div>
+  </header>
+  <main>
+    <table>
+      <tr>
+        <th>項目</th>
+        <th>値</th>
+      </tr>
+      <tr>
+        <td>緯度</td>
+        <td id="latitude"></td>
+      </tr>
+      <tr>
+        <td>経度</td>
+        <td id="longitude"></td>
+      </tr>
+      <tr>
+        <td>天気</td>
+        <td id="weather"></td>
+      </tr>
+      <tr>
+        <td>気温</td>
+        <td id="temperature"></td>
+      </tr>
+      <tr>
+        <td>湿度</td>
+        <td id="humidity"></td>
+      </tr>
+      <tr>
+        <td>気圧</td>
+        <td id="pressure"></td>
+      </tr>
+    </table>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- axiosライブラリの読み込み -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
